@@ -1,0 +1,119 @@
+/**=====================
+    Login CSS start
+==========================**/
+.login {
+    &-page {
+        background-color: rgba(var(--secondary-color),1);
+        height: 100vh;
+        @include pixelstrap-flex(flex, center, center);
+        @media screen and (max-width:575px) {
+            height: auto;
+        }
+    }
+    &-wrapper {
+        width: 60%;
+        margin-block: 60px;
+        box-shadow: 0 0 15px rgba(var(--primary-color), 0.6);
+        background-color: $white;
+        border-radius: 20px;
+        overflow: hidden;
+        .login-img{
+            img{
+                height: 100%;
+            }
+        }
+        .detail-wrap{
+            display: flex;
+            justify-self: center;
+            align-items: center;
+        }
+        @media screen and (max-width:992px) {
+            width: 90%;
+        }
+        @media screen and (max-width:575px) {
+            .detail-wrap{
+                order: 1;
+            }
+            .login-img{
+                order: 2;
+            }
+            .login-img{
+                img{
+                    height: auto;
+                    width: 100%;
+                }
+            }
+        }
+    }
+  
+    &-detail{
+        padding: 10px;
+        text-align: center;
+        img{
+            height: calc(40px + (70 - 40) * ((100vw - 320px) / (1920 - 320)));
+        }
+        h2{
+            padding-block: calc(18px + (40 - 18) * ((100vw - 320px) / (1920 - 320))) calc(14px + (25 - 14) * ((100vw - 320px) / (1920 - 320))); 
+            font-family: $mar;
+            font-weight: 600;
+            font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+        }
+        input{
+            display: inline-block;
+            padding: calc(6px + (8 - 6) * ((100vw - 320px) / (1920 - 320)));
+            width: 60%;
+            border: 1px solid rgb(184, 183, 183);
+            border-radius: 6px;
+            +input{
+                margin-top: calc(14px + (25 - 14) * ((100vw - 320px) / (1920 - 320)));
+            }
+            &::placeholder{
+                font-size: 15px;
+            }
+            &:focus-visible{
+                outline: none;
+            }
+            @media screen and (max-width:575px) {
+                width: 98%;
+            }
+        }
+        button{
+            width: 60%;
+            margin-block: calc(14px + (25 - 14) * ((100vw - 320px) / (1920 - 320)));;
+            background-color: rgba(var(--primary-color),1);
+            color: $white;
+            padding: 6px 8px;
+            font-family: $open;
+            @media screen and (max-width:575px) {
+                width: 98%;
+            }
+        }
+        .forgot{
+            font-size: 14px;
+            color: $theme-light-color;
+            font-family: $open;
+            padding: 0;
+        }
+        h5{
+            padding-top: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)));;
+            font-size: 16px;
+            font-family: $open;
+
+            a{
+                padding-left: 4px;
+                font-weight: 600;
+                color: rgba(var(--primary-color), 1);
+            }
+        }
+        h6{
+            padding-top: calc(20px + (55 - 20) * ((100vw - 320px) / (1920 - 320)));;
+            font-size: 15px;
+            color: $theme-light-color;
+            font-family: $open;
+
+        }
+    }
+}
+/**=====================
+    Login CSS end
+==========================**/

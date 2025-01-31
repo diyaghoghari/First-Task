@@ -1,0 +1,169 @@
+/**=====================
+    register CSS start
+==========================**/
+.register {
+    &-page {
+        background-color: rgba(var(--secondary-color), 1);
+        height: 100vh;
+        @include pixelstrap-flex(flex, center, center);
+
+        @media screen and (max-width:575px) {
+            height: auto;
+        }
+    }
+
+    &-wrapper {
+        width: 60%;
+        margin-block: 60px;
+        box-shadow: 0 0 15px rgba(var(--primary-color), 0.6);
+        background-color: $white;
+        border-radius: 20px;
+        overflow: hidden;
+
+        .register-img {
+            img {
+                height: 100%;
+            }
+        }
+
+        .detail-wrap {
+            display: flex;
+            justify-self: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width:992px) {
+            width: 90%;
+        }
+
+        @media screen and (max-width:575px) {
+            .detail-wrap {
+                order: 1;
+            }
+
+            .register-img {
+                order: 2;
+            }
+
+            .register-img {
+                img {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &-detail {
+        padding: 50px;
+        text-align: center;
+        
+        img {
+            height: calc(40px + (70 - 40) * ((100vw - 320px) / (1920 - 320)));
+        }
+
+        h2 {
+            padding-block: calc(18px + (32 - 18) * ((100vw - 320px) / (1920 - 320))) calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+            font-family: $mar;
+            font-weight: 600;
+            font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid rgb(212, 212, 212);
+            border-radius: 6px;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        .name-input {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            input{
+                margin: 0;
+            }
+        }
+
+        button {
+            width: 100%;
+            margin-bottom: calc(14px + (25 - 14) * ((100vw - 320px) / (1920 - 320)));
+            background-color: rgba(var(--primary-color), 1);
+            color: $white;
+            padding: 6px 8px;
+            font-family: $open;
+
+            @media screen and (max-width:575px) {
+                width: 98%;
+            }
+        }
+
+        .forgot {
+            font-size: 14px;
+            color: $theme-light-color;
+            font-family: $open;
+            padding: 0;
+        }
+
+        h5 {
+            padding-bottom: calc(18px + (30 - 18) * ((100vw - 320px) / (1920 - 320)));
+            font-size: 16px;
+            font-family: $open;
+
+            a {
+                padding-left: 4px;
+                font-weight: 600;
+                color: rgba(var(--primary-color), 1);
+            }
+        }
+        .form-check{
+            text-align: start;
+            padding-block: 15px 20px;
+            padding-left: 0;
+            input{
+                margin: 0;
+                width: unset;
+                border: 1px solid rgba(var(--primary-color), 1);
+                &:focus{
+                    box-shadow: none;
+                }
+                &:checked{
+                    background-color: rgba(var(--primary-color), 1);
+                }
+            }
+            label{
+                padding-left: 8px;
+            }
+        }
+        .social-connect{
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            .social-wrapper{
+                @include pixelstrap-flex(flex,center,center);
+                gap: 8px;
+                width:180px;
+                padding-block: 6px;
+                border: 1px solid rgb(190, 189, 189);
+                &.google{
+                    img{
+                        height: 40px;
+                    }
+                }
+                &.apple{
+                    img{
+                        height: 32px;
+                    }
+                }
+                h6{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+/**=====================
+    register CSS end
+==========================**/

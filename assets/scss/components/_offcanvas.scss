@@ -1,0 +1,156 @@
+/**==========================
+   Off-canvas CSS start
+=============================**/
+.offcanvas {
+    .offcanvas-header {
+        font-family: $mar;
+        h5{
+            font-weight: 600;
+        }
+        button{
+            &:focus{
+                box-shadow: none;
+            }
+        }
+    }
+
+    .offcanvas-body {
+        .progress {
+            margin-block: 10px 20px;
+            height: 10px;
+            position: relative;
+            overflow: unset;
+
+            .progress-bar {
+                border-radius: 50px;
+                background-color: rgba(var(--primary-color), 1);
+
+                .cart-icon {
+                    position: absolute;
+                    top: 50%;
+                    right: 120px;
+                    transform: translateY(-50%);
+                    height: 35px;
+                    width: 35px;
+                    border: 1px solid rgba(var(--secondary-color), 1);
+                    background-color: rgba(var(--primary-color), 1);
+                    border-radius: 50%;
+                    @include pixelstrap-flex(flex, center, center);
+
+                    i {
+                        font-size: 20px;
+                        color: rgba(var(--secondary-color), 1)
+                    }
+                }
+            }
+        }
+
+        .clear {
+            text-align: end;
+            font-size: 14px;
+            font-weight: 600;
+            color: rgba(var(--primary-color),1);
+        }
+
+        .cart-product {
+            li {
+                padding: 16px 0px;
+                @include pixelstrap-flex(flex, space-between, center);
+                border-bottom: 1px solid lightgray;
+                .img-detail {
+                    display: flex;
+                    gap: 6px;
+                    img {
+                        height: 100px;
+                    }
+
+                    .info {
+                        padding-top: 4px;
+                        h6 {
+                            font-family: $open;
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                        p{
+                            padding-top: 4px;
+                            font-size: 14px;
+                            color: $theme-light-color;
+                        }
+                    }
+                }
+
+                .edit-delete-wrap {
+                    .edit-delete {
+                        padding-bottom: 40px;
+                        display: flex;
+                        justify-content: end;
+                        gap: 5px;
+                        .icon-box{
+                            height: 30px;
+                            width: 30px;
+                            background-color: rgba(211, 211, 211, 0.507);
+                            @include pixelstrap-flex(flex,center,center);
+                        }
+                    }
+
+                    .input-group {
+                        border: 1px solid rgb(219, 219, 219);
+                        input {
+                            width: 30px;
+                            height: 30px;
+                            border: none;
+                            font-size: 14px;
+                            text-align: center;
+                        }
+
+                        .input-group-text {
+                            border-radius: 0;
+                            height: 30px;
+                            width: 30px;
+                            padding: 0;
+                            @include pixelstrap-flex(flex,center,center);
+                            border: none;
+                            background-color: rgba(211, 211, 211, 0.507);
+                        }
+                    }
+                }
+                &:last-child{
+                    border: none;
+                }
+            }
+        }
+        .final-cart{
+            position: absolute;
+            bottom: 0;
+            width: 92%;
+            background-color:$white;
+            li{
+                padding: 10px 0px 10px 0px;
+                border-top: 1px solid lightgray;
+                @include pixelstrap-flex(flex,space-between,center);
+                h6{
+                    font-family: $mar;
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+                .price{
+                    color: rgba(var(--primary-color), 1);
+                }
+                &.checkout{
+                    a{
+                        padding: 10px 16px;
+                        text-align: center;
+                        border-radius: 6px;
+                        width: 48%;
+                        color: $white;
+                        background-color: rgba(var(--primary-color), 1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**==========================
+   Off-canvas CSS end
+=============================**/

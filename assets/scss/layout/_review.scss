@@ -1,0 +1,84 @@
+/**=====================
+    Review CSS Start
+==========================**/
+.review-section{
+    // background-color: rgba(var(--secondary-color),1);
+    
+    .review{
+        &-title{
+            text-align: center;
+            h2{
+                font-family: $mar;
+                font-weight: 600;
+                color: $theme-font-color;
+                font-size: calc(18px + (40 - 18) * ((100vw - 320px) / (1920 - 320)));
+            }
+        }
+        &-content{
+            padding-top: calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
+            
+            .review-box{
+                margin-block: 8px 20px;
+                background-color: rgba(var(--secondary-color),1);
+                padding: calc(20px + (35 - 20) * ((100vw - 320px) / (1920 - 320)));;
+                border-radius: 6px;
+                overflow: hidden;
+                box-shadow: 0px 0px 10px rgba(var(--primary-color),0.6);
+                .review-top{
+                    p{
+                        font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));;
+                        font-family: $open;
+                        @include pixelstrap-ellipsis(4);
+                    }
+                    padding-bottom: 40px;
+                    border-bottom: 1px solid rgba(var(--primary-color),1);
+                }
+                .review-bottom{
+                    padding-top: calc(28px + (35 - 28) * ((100vw - 320px) / (1920 - 320)));
+                    position: relative;
+                    .review-img{
+                        // height: calc(60px + (80 - 60) * ((100vw - 320px) / (1920 - 320)));
+                        // width: calc(60px + (80 - 60) * ((100vw - 320px) / (1920 - 320)));
+                        @include pixelstrap-size(calc(60px + (80 - 60) * ((100vw - 320px) / (1920 - 320))),calc(60px + (80 - 60) * ((100vw - 320px) / (1920 - 320))));
+                        border-radius: 100%;
+                        overflow: hidden;
+                        object-fit: cover;
+                        background-color: aqua;
+                        position: absolute;
+                        right: 0;
+                        top: -35px;
+                        [dir="rtl"] & {
+                            right: unset !important;
+                            left: 0 !important;
+                            }
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .rating{
+                        padding: 0;
+                        i{
+                            color: rgb(252, 165, 3);
+                        }
+                    }
+                    h5{
+                        font-size: 16px;
+                    }
+                    h6{
+                        padding-top: 3px;
+                        font-size: 14px;
+                        color: $theme-light-color;
+                    }
+                }
+            }
+
+           .swiper-pagination-bullet-active{
+            background-color: rgba(var(--primary-color),1);
+           }
+        }
+    }
+}
+/**=====================
+    Review CSS end
+==========================**/

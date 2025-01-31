@@ -1,0 +1,19 @@
+/**=====================
+    Rtl CSS start
+==========================**/
+body[dir="rtl"]{
+    .swiper{
+        direction: ltr;
+    
+        .swiper-wrapper{
+            .swiper-slide{
+                >*{
+                    direction: rtl;
+                }
+            }
+        }
+    }
+    }
+/**=====================
+    Rtl CSS end
+==========================**/

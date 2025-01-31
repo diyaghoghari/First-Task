@@ -1,0 +1,203 @@
+/**=====================
+    CheckOut CSS start
+==========================**/
+.checkout-section {
+    .form-check {
+        input {
+            &:checked {
+                background-color: rgba(var(--primary-color), 1);
+                box-shadow: none;
+                border-color: rgba(var(--primary-color), 1);
+            }
+
+            &:focus {
+                box-shadow: none;
+                border-color: rgba(var(--primary-color), 1);
+            }
+        }
+
+        label {
+            font-size: 19px;
+            font-weight: 600;
+            font-family: $mar;
+        }
+    }
+
+    .checkout-box {
+        background-color: rgba(var(--theme-bg-brown), 1);
+        padding: 22px 26px;
+        border-radius: 6px;
+
+        +.checkout-box {
+            margin-top: 24px;
+        }
+
+        .checkout-wraper {
+            background-color: $white;
+            box-shadow: 0 0 12px rgba(var(--primary-color), 0.2);
+            padding: 20px;
+            border-radius: 6px;
+        }
+    }
+
+    .checkout-subtitle {
+        font-family: $mar;
+        font-weight: 700;
+        letter-spacing: 0.6;
+        padding-bottom: 12px;
+    }
+
+    .delivery-address-box {
+
+        .address-ratio {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            .address-content {
+                padding-top: 6px;
+                display: block;
+                font-size: 14px;
+                font-family: $open;
+                font-weight: 400;
+
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+        .badge{
+            position: absolute;
+            right: 0;
+            background-color: rgba(var(--primary-color), 1);
+            font-weight: 400;
+            padding: 6px;
+        }
+    }
+
+    .delivery-option-box {
+        label {
+            font-weight: 500;
+        }
+    }
+
+    // *** col-3-order-summery ***
+    .order-summery {
+        background-color: rgba(var(--theme-bg-brown), 1);
+        padding: 22px 26px;
+        border-radius: 6px;
+
+        +.order-summery {
+            margin-top: 24px;
+        }
+
+        h5 {
+            font-family: $mar;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .product-summery {
+            padding-block: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgb(221, 220, 220);
+
+            .img-summery-box {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                img {
+                    background-color: $white;
+                    height: 80px;
+                }
+            }
+
+            p {
+                color: $theme-light-color;
+
+                span {
+                    font-weight: 600;
+                }
+            }
+
+            h6 {
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+
+        .price-summery {
+            padding-top: 20px;
+
+            .pricing {
+                font-family: $open;
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 6px;
+
+                h6 {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                &:nth-child(4) {
+                    padding-block: 6px 10px;
+                    color: rgba(var(--primary-color), 1);
+                    border-bottom: 1px solid rgb(221, 220, 220);
+                }
+
+                &:last-child {
+                    h4 {
+                        font-size: 19px;
+                        font-weight: 700;
+                    }
+
+                    h6 {
+                        font-weight: 700;
+                    }
+
+                    padding-block: 20px 0px;
+                }
+            }
+        }
+
+        .offer-title {
+            font-size: 16px;
+            padding-bottom: 6px;
+            // color: red;
+        }
+
+        ul {
+            padding-left: 16px;
+
+            li {
+                list-style-type: initial;
+
+                +li {
+                    padding-top: 6px;
+                }
+
+                p {
+                    font-size: 14px;
+                    // @include pixelstrap-ellipsis(1);
+                }
+            }
+        }
+    }
+
+    .btn {
+        margin-top: 24px;
+        width: 100%;
+        background-color: rgba(var(--primary-color), 1);
+        color: $white;
+        padding-block: 8px;
+    }
+}
+
+
+/**=====================
+    CheckOut CSS end
+==========================**/

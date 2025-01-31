@@ -1,0 +1,88 @@
+/**==============================
+    categories-section CSS start
+=================================**/
+
+// *** categories section ***
+.categories {
+    background-color: rgba(var(--secondary-color),1);
+    color: $theme-font-color;
+
+    &-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            font-family: $mar;
+            width: 30%;
+            font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
+            @media screen and (max-width:992px) {
+                width: 60%;
+            }
+        }
+        a{
+            font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+        }
+
+        @media screen and (max-width:575px) {
+            display: block;
+            text-align: center;
+            h2{
+                width: 100%;
+                padding-bottom: 5px;
+            }
+        }
+    }
+
+    &-content {
+        padding-top: 40px;
+
+        .category-box {
+            margin-bottom: 20px;
+            padding: 16px 17px;
+            background-color: $white;
+            box-shadow: 5px 5px 15px rgba(var(--primary-color), 0.582);
+            border-radius: 6px;
+
+            .category-img {
+                height: 150px;
+                overflow: hidden;
+                border-radius: 6px;
+
+                img {
+                    @include pixelstrap-size(100%,100%);
+                    border-radius: 6px;
+                    transition: all .6s;
+                }
+                @media screen and (max-width:400px) {
+                    height: 180px;
+                }
+            }
+
+            a {
+                display: block;
+                font-size: 18px;
+                padding-top: 10px;
+                text-align: center;
+                transition: all .6s;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+
+                a {
+                    color: rgba(var(--primary-color),1);
+                }
+            }
+        }
+        @media screen and (max-width:575px) {
+            padding-top: 10px;
+        }
+    }
+}
+
+/**==============================
+    categories-section CSS end
+=================================**/

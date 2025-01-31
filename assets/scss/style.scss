@@ -1,0 +1,87 @@
+/*! -----------------------------------------------------------------------------------
+
+    Template Name: FastKart
+    Template URI: 
+    Description: This is E-commerce theme
+    Author: Pixelstrap
+    Author URI: https://themeforest.net/user/pixelstrap
+
+-----------------------------------------------------------------------------------
+
+ 1.Base css
+    1.1 Reset CSS
+    1.2 Typography CSS
+
+2.Components css
+    2.1 According Css
+    2.2 Breadcrumb Css
+    2.3 Card Css
+
+3.Layout css
+    3.1 Footer css
+    3.2 Header css
+    3.3 Navs css
+    3.4 Rtl css
+    3.5 Sidebar css
+
+4.Pages css
+    4.1 Cart css
+    4.2 Errorpage css
+    4.3 User-profile css
+    4.4 Wishlist css
+
+5.Themes css
+    5.1 Dark css
+
+6.Util css
+    6.1 Mixin css
+    6.2 Variable css
+
+ */
+
+// *** utils ***
+@import "util/variables";
+
+// root and .dark-only css write here
+
+// *** utils ***
+@import "util/mixin";
+
+// *** base ***
+@import "base/reset";
+@import "base/typography";
+
+// *** components ***
+@import "components/according";
+@import "components/breadcrumb";
+@import "components/button";
+@import "components/card";
+@import "components/form";
+@import "components/loader";
+@import "components/offcanvas";
+@import "components/product";
+@import "components/slider";
+
+// *** pages ***
+@import "pages/cart";
+@import "pages/checkout";
+@import "pages/errorpage";
+@import "pages/login";
+@import "pages/register";
+@import "pages/user-profile";
+@import "pages/wishlist";
+
+// *** layout ***
+@import "layout/blog";
+@import "layout/categories";
+@import "layout/counting";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navs";
+@import "layout/review";
+@import "layout/rtl";
+@import "layout/sidebar";  
+@import "layout/team";
+ 
+// *** theme ***
+@import "themes/dark";

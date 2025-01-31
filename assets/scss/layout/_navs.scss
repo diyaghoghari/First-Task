@@ -1,0 +1,90 @@
+/**=====================
+    Nav CSS start
+==========================**/
+.navbar {
+    padding-inline: calc(0px + (40 - 0) * ((100vw - 320px) / (1920 - 320)));
+    position: relative;
+    .navbar-collapse {
+        justify-content: end;
+        gap: 25px;
+    }
+
+    .navbar-brand {
+        img {
+            height: calc(40px + (68 - 40) * ((100vw - 320px) / (1920 - 320)));
+        }
+    }
+    button{
+        padding: 6px 8px;
+        border-color: $white;
+        .navbar-burger-icon{
+            @include pixelstrap-size(25px,25px);
+            i{
+                font-size: calc(20px + (25 - 20) * ((100vw - 320px) / (1920 - 320)));
+                color: $white;
+            }
+        }
+        &:focus{ 
+            box-shadow: none;
+        }
+    }
+   
+    .navbar-nav {
+        gap: calc(16px + (42 - 16) * ((100vw - 320px) / (1920 - 320)));
+
+        a {
+            position: relative;
+            font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
+            font-family: $mar;
+            color: $white;
+            letter-spacing: 1px;
+
+            &.active {
+                color: $white;
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 0%;
+                height: 2px;
+                background-color: $white;
+                bottom: 0;
+                left: 0;
+                transition: all .500s;
+            }
+
+            &:hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            @media screen and (max-width:992px) {
+                display: inline !important;
+            }
+        }
+    }
+
+    .header-icons {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        i {
+            font-size: 20px;
+            color: $white;
+            transition: all .6s ;
+            &:hover{
+                color: rgba(var(--primary-color),1);
+            }
+        }
+        .btn{
+            border: none;
+        }
+    }
+}
+
+/**=====================
+    Nav CSS end
+==========================**/

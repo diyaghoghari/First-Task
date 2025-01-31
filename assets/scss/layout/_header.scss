@@ -1,0 +1,151 @@
+/**=====================
+    Header CSS start
+==========================**/
+header {
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    
+    .nav-item {
+        .sub-items {
+            background-color: rgba(var(--secondary-color),1);
+            position: absolute;
+            width: 170px;
+            top: 80%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .40s ease-in-out;
+            border-radius: 4px;
+            transition: all 1s;
+            
+            li {
+                padding: 10px 16px;
+
+                +li {
+                    border-top: 1px solid rgba(var(--primary-color),1);
+                }
+
+                a {
+                    color: $theme-font-color;
+                    &::after {
+                        position: unset;
+                    }
+                }
+            }
+
+            @media screen and (max-width:991px) {
+                position: unset;
+                opacity: unset;
+                visibility: unset;
+                display: none;
+                transition: all 2s;
+                width: calc(100% - 25px);
+                margin: 10px 0px 0px 10px;
+            }
+
+            &.mega-menu {
+                width: calc(100% - calc(200px + (400 - 200) * ((100vw - 992px) / (1980 - 992))));
+                right: 5%;
+                padding: 30px;
+                overflow: auto;
+                z-index: 9;
+                [dir="rtl"] & {
+                    left: 5% !important;
+                    right: unset !important;
+                }
+                img {
+                    width: 100%;
+                }
+
+                li {
+                    padding: 0;
+                    border: none;
+                }
+
+                .link-section {
+                    h5 {
+                        font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1980 - 320)));;
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid rgba(var(--primary-color),1);
+                    }
+
+                    ul {
+                        li {
+                            padding-block: 4px;
+
+                            &:first-child {
+                                padding-top: 10px;
+                            }
+
+                            a {
+                                font-family: $open;
+                            }
+                            &:hover{
+                                a{
+                                    color: rgba(var(--primary-color), .8);
+                                }
+                            }
+                        }
+                    }
+                    .show{
+                        display: block;
+                    }
+                }
+                @media screen and (max-width:991px) {
+                    @include pixelstrap-size(calc(94% + (120 - 94) * ((100vw - 320px) / (991 - 320))),300px);
+                    .menu-content{
+                        display: none;
+                    }
+                    .menu-title{
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+            &.nav-icon{
+                left: 88%;
+            }
+
+            &:not(.mega-menu) {
+                li {
+                    &:hover {
+                        a {
+                            color: rgba(var(--primary-color),1);
+                        }
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            .sub-items {
+                top: 100%;
+                opacity: 1;
+                visibility: visible;
+               
+
+                @media screen and (max-width:992px) {
+                    display: block;
+                }
+            }
+
+            i {
+                transform: scale(-1);
+            }
+        }
+    }
+    &.bg-color{ 
+        background-color: rgba(134, 87, 49, 0.8);
+        backdrop-filter: blur(10px);
+        position: relative;
+    }
+
+    @media screen and (max-width:992px) {
+        background-color: rgba(134, 87, 49, 0.8);
+        backdrop-filter: blur(10px);
+    }
+}
+
+/**=====================
+    Header CSS end
+==========================**/

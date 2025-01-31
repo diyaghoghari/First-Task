@@ -1,0 +1,24 @@
+/**=====================
+    Mixin CSS start
+==========================**/
+@mixin pixelstrap-flex($flex,$justify,$align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin pixelstrap-ellipsis($line-clamp) {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: $line-clamp;
+    -webkit-box-orient: vertical;
+}
+
+@mixin pixelstrap-size ($width , $height ) {
+    width: $width;
+    height: $height;
+}
+
+/**=====================
+    Mixin CSS end
+==========================**/

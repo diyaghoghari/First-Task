@@ -1,0 +1,25 @@
+//General-color
+$theme-font-color:#333;
+$theme-light-color:gray;
+
+// theme-color
+// rgba(var(--primary-color),1):rgb(170, 117, 73);
+// rgba(var(--secondary-color),1):#fff5ea;
+$white:#ffffff;
+$black:#000000;
+
+//font-family 
+$mar:"Marcellus", serif;
+$open:"Open Sans", serif;
+
+:root{
+    --primary-color:170, 117, 73;
+    --secondary-color:255, 245, 234;
+    --theme-bg-brown:248, 242, 238;
+}
+.dark-only{
+    --white-border:rgb(77, 76, 76);
+    --background-color:rgb(5, 4, 1);
+    --common-white-font:rgba(215, 215, 215, 1);
+    --black-shade1:rgb(15, 9, 0);
+}

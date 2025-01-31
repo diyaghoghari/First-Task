@@ -1,0 +1,178 @@
+/**=====================
+    SLider CSS start
+==========================**/
+.bg-slider {
+    background-attachment: fixed;
+
+    .swiper-slide {
+        width: 100%;
+        overflow: hidden;
+
+        img {
+            position: relative;
+            @include pixelstrap-size(100%, 100vh);
+            object-fit: cover;
+            background-attachment: fixed;
+            background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+
+            @media screen and (max-width:768px) and (min-width:576px) {
+                height: 70vh;
+            }
+
+            @media screen and (max-width:575px) {
+                height: 50vh;
+            }
+        }
+
+        .overlay {
+            position: absolute;
+            @include pixelstrap-size(100%, 100%);
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.377);
+        }
+
+        .bg1,
+        .bg3 {
+            transform: scale(1);
+            animation: zoomOut 10s linear infinite;
+
+            @keyframes zoomOut {
+                100% {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .bg2 {
+            transform: scale(1.1);
+            animation: zoomIn 10s linear infinite;
+
+            @keyframes zoomIn {
+                100% {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        &::after {
+            content: unset;
+        }
+
+        i {
+            font-size: 50px;
+            font-weight: 100;
+            color: $white;
+        }
+    }
+
+    .bg-content {
+        position: absolute;
+        width: 70%;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        h1 {
+            font-size: calc(14px + (60 - 14) * ((100vw - 320px) / (1920 - 320)));
+            font-weight: 600;
+            font-family: $mar;
+            color: $white;
+        }
+
+        h5 {
+            font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
+            font-weight: 300;
+            padding-block: 8px 22px;
+            color: $white;
+        }
+
+        button {
+            background-color: rgba(255, 255, 255, 0.548);
+            color: $white;
+            outline-offset: 3px;
+            outline: 1px solid white;
+            border: 2px solid transparent;
+            font-weight: 500;
+            font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
+            padding: calc(6px + (14 - 6) * ((100vw - 320px) / (1920 - 320))) calc(12px + (40 - 12) * ((100vw - 320px) / (1920 - 320)));
+            border-radius: 0;
+
+            &:hover {
+                color: rgba(var(--primary-color), 1);
+                background: $white;
+                border-width: 2px;
+            }
+        }
+    }
+}
+
+// product-detail slider 
+
+.prd-detail-slider {
+    position: relative;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        height: 35px;
+        width: 35px;
+        background-color: rgba(var(--primary-color), 1);
+        border-radius: 50%;
+        margin-inline: 10px;
+
+        &::after {
+            content: unset;
+        }
+
+        i {
+            font-size: 30px;
+            color: rgba(var(--secondary-color), 1);
+        }
+    }
+
+    .swiper {
+        width: 100%;
+        height: 280px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &.product-detail2 {
+            height: 70%;
+            width: 100%;
+
+        }
+
+        &.product-detail {
+            height: 25%;
+            box-sizing: border-box;
+            padding: 10px 0;
+
+            .swiper-slide {
+                width: 25%;
+                height: 100%;
+                opacity: 0.4;
+            }
+            .swiper-slide-thumb-active{
+                opacity: 1;
+            }
+        }
+    }
+}
+/**=====================
+    SLider CSS end
+==========================**/

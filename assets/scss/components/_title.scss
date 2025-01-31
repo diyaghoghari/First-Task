@@ -1,0 +1,25 @@
+/**==========================
+   Title CSS start
+=============================**/
+.special-heading{
+    text-align: center;
+    background-color: rgba(var(--primary-color),1);
+    color: $btn-white-txt;
+    font-weight: 700;
+    padding-block: calc(10px + (14 - 10) * ((100vw - 320px) / (1980 - 320)));
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        background: url(../images/special-product/special-bg.png);
+        @include pixelstrap-size(100%,100%);
+        top: 0;
+        left: 0;
+    } 
+    h4{
+        font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1980 - 320)));
+    }
+}
+/**==========================
+   Title CSS end
+=============================**/

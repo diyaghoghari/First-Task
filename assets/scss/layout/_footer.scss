@@ -1,0 +1,124 @@
+/**=====================
+    Footer CSS start
+==========================**/
+footer {
+    background-color: rgba(var(--primary-color),1);
+    padding: calc(30px + (105 - 30) * ((100vw - 320px) / (1980 - 320))) 0px 42px 0px;
+
+    .footer-1 {
+        padding-bottom: 42px;
+
+        img {
+            height: calc(28px + (72 - 28) * ((100vw - 320px) / (1920 - 320)));
+        }
+    }
+
+    .footer-title {
+        font-family: $mar;
+        color: $white;
+        font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 600;
+
+        i {
+            margin-right: auto;
+        }
+    }
+
+    .footer-contain {
+        h6 {
+            padding-top: calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
+            color: rgba(var(--secondary-color),1);
+            font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+            font-weight: 400;
+            font-family: $open;
+        }
+    }
+
+    .info {
+        padding-top: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+        color: rgba(var(--secondary-color),1);
+        font-family: $open;
+    }
+
+    .store-information {
+        li {
+            padding-top: 24px;
+            display: flex;
+            gap: 8px;
+            color: rgba(var(--secondary-color),1);
+            font-family: $open;
+
+            &:first-child {
+                padding-top: 16px;
+            }
+
+            i {
+                font-size: 18px;
+                color: $white;
+            }
+        }
+    }
+
+    .social-media {
+        padding-top: 16px;
+        display: flex;
+        gap: 6px;
+
+        i {
+            color: $theme-font-color;
+            font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+            transition: all .4s
+        }
+
+        li {
+            @include pixelstrap-size(calc(32px + (35 - 32) * ((100vw - 320px) / (1920 - 320))), calc(32px + (35 - 32) * ((100vw - 320px) / (1920 - 320))));
+            @include pixelstrap-flex(flex, center, center);
+            background-color: rgba(237, 237, 237, 1);
+            border-radius: 50%;
+
+            &:hover {
+                i {
+                    font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+                    color: rgba(var(--primary-color),1);
+                }
+            }
+        } 
+    }
+
+    .copyright-section {
+        border-top: 1px solid $white;
+        padding-top: 26px;
+        display: flex;
+        justify-content: space-between;
+        color: rgba(var(--secondary-color),1);
+
+        p {
+            font-family: $open;
+            font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1980 - 320)));
+        }
+
+        @media screen and (max-width:575px) {
+            display: block;
+            padding-top: 16px;
+
+            p {
+                padding-bottom: 16px;
+            }
+        }
+    }
+
+    .visa {
+        display: flex;
+        gap: 7px;
+
+        img {
+            height: calc(16px + (24 - 16) * ((100vw - 320px) / (1980 - 320)));
+            ;
+        }
+    }
+}
+
+/**=====================
+    Footer CSS end
+==========================**/

@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    >
+    <!-- Remix-Icon css-->
+    <link rel="stylesheet" href="../assets/css/vendors/remixicon.css">
+    <!-- Swiper Slider css-->
+    <link
+      rel="stylesheet"
+      href="../assets/css/vendors/swiper-slider/swiper-slider.css"
+    >
+    <!--range-slider -->
+    <link
+      rel="stylesheet"
+      href="../assets/css/vendors/range-slider/ion.rangeSlider.min.css"
+    >
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" href="../assets/css/vendors/bootstrap.css">
+    <!-- Style css-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" href="../assets/images/logo/favicon1.png">
+    <title>ProductList</title>
+  </head>
+  <body>
+    <!-- *** header *** -->
+    <header class="bg-color">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-burger-icon">
+              <i class="ri-menu-line"></i>
+            </span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="../assets/images/logo/logo-light.png"
+              class="img-fluid"
+              alt="logo"
+            >
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" target="_blank">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >PRODUCT <i class="ri-arrow-down-s-line"></i
+                ></a>
+                <ul class="sub-items">
+                  <li>
+                    <a href="productlist.html" target="_blank">PRODUCT-LIST</a>
+                  </li>
+                  <li><a href="productdetail.html">PRODUCT-DETAIL</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true"
+                  >PAGES <i class="ri-arrow-down-s-line"></i
+                ></a>
+                <ul class="sub-items">
+                  <li><a href="#!">CONTACT US</a></li>
+                  <li><a href="#!">ABOUT US</a></li>
+                  <li><a href="#!">ABOUT ME</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true"
+                  >MEGA MENU <i class="ri-arrow-down-s-line"></i
+                ></a>
+                <ul class="sub-items mega-menu">
+                  <li>
+                    <div class="row g-0 g-xl-4">
+                      <div class="col-12 col-lg-3">
+                        <div class="link-section">
+                          <div class="menu-title">
+                            <h5>
+                              Arabica <i class="ri-arrow-down-s-line"></i>
+                            </h5>
+                          </div>
+                          <div class="menu-content">
+                            <ul>
+                              <li><a href="#!">Decaffeinated Coffee</a></li>
+                              <li><a href="#!">Dried Pure Coffee</a></li>
+                              <li><a href="#!">Special Coffee</a></li>
+                              <li><a href="#!">Black Coffee</a></li>
+                              <li><a href="#!">60 Degree Coffee</a></li>
+                              <li><a href="#!">Blended Coffee</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3">
+                        <div class="link-section">
+                          <div class="menu-title">
+                            <h5>
+                              Robusta <i class="ri-arrow-down-s-line"></i>
+                            </h5>
+                          </div>
+                          <div class="menu-content">
+                            <ul>
+                              <li><a href="#!">Gold Filter Coffee</a></li>
+                              <li><a href="#!">Lemon Flavor Coffee</a></li>
+                              <li><a href="#!">Xtra Roasted Coffee</a></li>
+                              <li><a href="#!">Fresh Green Coffee</a></li>
+                              <li><a href="#!">Jamu Coffee</a></li>
+                              <li><a href="#!">Insta Coffee</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3">
+                        <div class="link-section">
+                          <div class="menu-title">
+                            <h5>
+                              Liberica <i class="ri-arrow-down-s-line"></i>
+                            </h5>
+                          </div>
+                          <div class="menu-content">
+                            <ul>
+                              <li><a href="#!">Rich Aroma Coffee</a></li>
+                              <li><a href="#!">Grounded Coffee</a></li>
+                              <li><a href="#!">Aroma Coffee</a></li>
+                              <li><a href="#!">Rambo Coffee</a></li>
+                              <li><a href="#!">Bean Filter Coffee</a></li>
+                              <li><a href="#!">Refresher Coffee</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3">
+                        <img
+                          src="../assets/images/mega-menu/1.jpeg"
+                          class="img-fluid"
+                          alt="menu1"
+                        >
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="header-icons">
+              <li>
+                <button
+                  class="btn"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                >
+                  <i class="ri-shopping-cart-2-line"></i>
+                </button>
+              </li>
+              <li>
+                <a href="#!"><i class="ri-search-line"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link"><i class="ri-user-3-line"></i></a>
+                <ul class="sub-items nav-icon">
+                  <li><a href="logIn.html" target="_blank">LogIn</a></li>
+                  <li><a href="register.html" target="_blank">Register</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- *** bread-crumb *** -->
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            product-list
+          </li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- *** cart-offcanvas *** -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">MY CART( 3 )</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <span>3 items</span>
+        <div class="progress" role="progressbar">
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated"
+            style="width: 58.08%"
+          >
+            <div class="cart-icon">
+              <i class="ri-truck-line"></i>
+            </div>
+          </div>
+        </div>
+        <p class="clear">Clear Cart</p>
+        <ul class="cart-product">
+          <li>
+            <div class="img-detail">
+              <img
+                src="../assets/images/product/p1.1.webp"
+                class="img-fluid"
+                alt="cart1"
+              >
+              <div class="info">
+                <h6>Couture Edge</h6>
+                <p>1 X $6.74</p>
+              </div>
+            </div>
+            <div class="edit-delete-wrap">
+              <div class="edit-delete">
+                <div class="icon-box"><i class="ri-pencil-line"></i></div>
+               <div class="icon-box"> <i class="ri-delete-bin-6-line"></i></div>
+              </div>
+
+              <div class="input-group">
+                <span class="input-group-text">-</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  value="1"
+                  aria-label="Amount (to the nearest dollar)"
+                >
+                <span class="input-group-text">+</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-detail">
+              <img
+                src="../assets/images/product/p1.1.webp"
+                class="img-fluid"
+                alt="cart1"
+              >
+              <div class="info">
+                <h6>Couture Edge</h6>
+                <p>1 X $6.74</p>
+              </div>
+            </div>
+            <div class="edit-delete-wrap">
+              <div class="edit-delete">
+                <div class="icon-box"><i class="ri-pencil-line"></i></div>
+               <div class="icon-box"> <i class="ri-delete-bin-6-line"></i></div>
+              </div>
+
+              <div class="input-group">
+                <span class="input-group-text">-</span>
+                <input
+                  type="text"
+                  value="1"
+                  class="form-control"
+                  aria-label="Amount (to the nearest dollar)"
+                >
+                <span class="input-group-text">+</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-detail">
+              <img
+                src="../assets/images/product/p1.1.webp"
+                class="img-fluid"
+                alt="cart1"
+              >
+              <div class="info">
+                <h6>Couture Edge</h6>
+                <p>1 X $6.74</p>
+              </div>
+            </div>
+            <div class="edit-delete-wrap">
+              <div class="edit-delete">
+                <div class="icon-box"><i class="ri-pencil-line"></i></div>
+               <div class="icon-box"> <i class="ri-delete-bin-6-line"></i></div>
+              </div>
+
+              <div class="input-group">
+                <span class="input-group-text">-</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  value="1"
+                  aria-label="Amount (to the nearest dollar)"
+                >
+                <span class="input-group-text">+</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="final-cart">
+          <li class="cart-amount">
+            <h6>Sub Total:</h6>
+            <h6 class="price">$36.74</h6>
+        </li>
+          <li class="checkout">
+            <a href="#!">View Cart</a>
+            <a href="checkout.html">Check Out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- *** product-list section *** -->
+
+    <!-- *** slider *** -->
+    <section>
+      <div class="container">
+        <div class="swiper product-list">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="../assets/images/product-list/list1.webp"
+                class="img-fluid"
+                alt="list1"
+              >
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../assets/images/product-list/p2.avif"
+                class="img-fluid"
+                alt="list2"
+              >
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../assets/images/product-list/p3.avif"
+                class="img-fluid"
+                alt="list3"
+              >
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- *** list section *** -->
+    <section class="list-section section-block-space">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
+                  >
+                    Filters
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseOne"
+                  class="accordion-collapse collapse show"
+                >
+                  <div class="accordion-body">
+                    <ul class="filter-wrap">
+                      <li>Vegetable <i class="ri-close-fill"></i></li>
+                      <li>Fruit <i class="ri-close-fill"></i></li>
+                      <li>Fresh <i class="ri-close-fill"></i></li>
+                      <li>Milk <i class="ri-close-fill"></i></li>
+                      <li>Meat <i class="ri-close-fill"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo"
+                  >
+                    Categories
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseTwo"
+                  class="accordion-collapse collapse"
+                >
+                  <div class="accordion-body categories-wrap">
+                    <div class="input-group mb-1">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="search"
+                        aria-label="search"
+                        aria-describedby="basic-addon2"
+                      >
+                      <span class="input-group-text" id="basic-addon2"
+                        ><i class="ri-search-line"></i
+                      ></span>
+                    </div>
+                    <div class="categories-check">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        >
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Fruits & Vegetables
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="1"
+                          id="flexCheckDefault1"
+                        >
+                        <label class="form-check-label" for="flexCheckDefault1">
+                          Bakery, Cake & Dairy
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault2"
+                        >
+                        <label class="form-check-label" for="flexCheckDefault2">
+                          Beverages
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="f3"
+                        >
+                        <label class="form-check-label" for="f3">
+                          Snacks & Branded
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="f4"
+                        >
+                        <label class="form-check-label" for="f4">
+                          Beauty & Household
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="f5"
+                        >
+                        <label class="form-check-label" for="f5">
+                          Kitchen, Garden & Pets
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="f6"
+                        >
+                        <label class="form-check-label" for="f6">
+                          Eggs, Meat & Fish
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree"
+                  >
+                    Food Preference
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseThree"
+                  class="accordion-collapse collapse"
+                >
+                  <div class="accordion-body">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="fl3"
+                      >
+                      <label class="form-check-label" for="fl3">
+                        Kitchen, Garden & Pets
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="l1"
+                      >
+                      <label class="form-check-label" for="l1">
+                        Eggs, Meat & Fish
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFour"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
+                  >
+                    Price
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseFour"
+                  class="accordion-collapse collapse"
+                >
+                  <div class="accordion-body price">
+                    <div class="range-slider">
+                      <input type="text" class="js-range-slider" value="" >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFive"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
+                  >
+                    Discount
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseFive"
+                  class="accordion-collapse collapse"
+                >
+                  <div class="accordion-body">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="fl4"
+                      >
+                      <label class="form-check-label" for="fl4">
+                        upto 5%
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="fl5"
+                      >
+                      <label class="form-check-label" for="fl5">
+                        5% - 10%
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="fle1"
+                      >
+                      <label class="form-check-label" for="fle1">
+                        10% - 15%
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="fle2"
+                      >
+                      <label class="form-check-label" for="fle2">
+                        15% - 25%
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="fl2"
+                      >
+                      <label class="form-check-label" for="fl2">
+                        More than 25%
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-9">
+            <div class="sort-options pb-4">
+              <div class="option-btn">
+                <label>Sort By:</label>
+                <select name="sort">
+                  <option value="popularity">Popularity</option>
+                  <option value="">Low-High Price</option>
+                  <option value="">High-Low Price</option>
+                  <option value="">Average Rating</option>
+                  <option value="">A to Z Order</option>
+                  <option value="">Z to A Order</option>
+                  <option value="">% Off - High To Low</option>
+                </select>
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="grid-btn">
+                <button
+                  type="button"
+                  class="grid-3"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="grid-3"
+                >
+                  <i class="ri-menu-line"></i>
+                </button>
+                <button
+                  class="grid-4"
+                  type="button"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="grid-4"
+                >
+                  <i class="ri-align-justify"></i>
+                </button>
+                <button
+                  class="grid-list"
+                  type="button"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="grid-List"
+                >
+                  <i class="ri-list-check"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="row g-4 row-cols-xl-3 row-cols-lg-2 row-cols-md-3 row-cols-2 all-product-card"
+            >
+              <div class="col-12">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img
+                      src="../assets/images/product/p1.1.webp"
+                      class="img-fluid main-img"
+                      alt="p1"
+                    >
+                    <img
+                      src="../assets/images/product/p1.webp"
+                      class="img-fluid hover-img"
+                      alt="p2"
+                    >
+                    <ul class="product-icons">
+                      <li><a href="#!"></a><i class="ri-links-line"></i></li>
+                      <li><a href="#!"></a><i class="ri-heart-3-line"></i></li>
+                      <li><a href="#!"></a><i class="ri-search-line"></i></li>
+                    </ul>
+                  </div>
+                  <div class="product-content">
+                    <h6 class="product-subtitle">KOINONIA</h6>
+                    <p class="text-content">
+                      Whether you love a hot cup in the morning or enjoy a
+                      freshly brewed one on a chilly day, these words are here
+                      to make your daily coffee routine feel like poetry.
+                    </p>
+                    <h5>Rich Aroma Coffee</h5>
+                    <h6 class="product-price">$258.00</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img
+                      src="../assets/images/product/p2.1.webp"
+                      class="img-fluid main-img"
+                      alt="p1"
+                    >
+                    <img
+                      src="../assets/images/product/p2.webp"
+                      class="img-fluid hover-img"
+                      alt="p2"
+                    >
+                    <ul class="product-icons">
+                      <li><a href="#!"></a><i class="ri-links-line"></i></li>
+                      <li><a href="#!"></a><i class="ri-heart-3-line"></i></li>
+                      <li><a href="#!"></a><i class="ri-search-line"></i></li>
+                    </ul>
+                  </div>
+                  <div class="product-content">
+                    <h6 class="product-subtitle">KOINONIA</h6>
+                    <p class="text-content">
+                      Whether you love a hot cup in the morning or enjoy a
+                      freshly brewed one on a chilly day, these words are here
+                      to make your daily coffee routine feel like poetry.
+                    </p>
+                    <h5>Rich Aroma Coffee</h5>
+                    <h6 class="product-price">$258.00</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img
+                      src="../assets/images/product/p3.1.webp"
+                      class="img-fluid main-img"
+                      alt="p1"
+                    >
+                    <img
+                      src="../assets/images/product/p3.webp"
+                      class="img-fluid hover-img"
+                      alt="p2"
+                    >
+                    <ul class="product-icons">
+                      <li><a href="#!"></a><i class="ri-links-line"></i></li>
+                      <li><a href="#!"></a><i class="ri-heart-3-line"></i></li>
+                      <li><a href="#!"></a><i class="ri-search-line"></i></li>
+                    </ul>
+                  </div>
+                  <div class="product-content">
+                    <h6 class="product-subtitle">KOINONIA</h6>
+                    <p class="text-content">
+                      Whether you love a hot cup in the morning or enjoy a
+                      freshly brewed one on a chilly day, these words are here
+                      to make your daily coffee routine feel like poetry.
+                    </p>
+                    <h5>Rich Aroma Coffee</h5>
+                    <h6 class="product-price">$258.00</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img
+                      src="../assets/images/product/p3.1.webp"
+                      class="img-fluid main-img"
+                      alt="p1"
+                    >
+                    <img
+                      src="../assets/images/product/p3.webp"
+                      class="img-fluid hover-img"
+                      alt="p2"
+                    >
+                    <ul class="product-icons">
+                      <li><a href="#!"></a><i class="ri-links-line"></i></li>
+                      <li><a href="#!"></a><i class="ri-heart-3-line"></i></li>
+                      <li><a href="#!"></a><i class="ri-search-line"></i></li>
+                    </ul>
+                  </div>
+                  <div class="product-content">
+                    <h6 class="product-subtitle">KOINONIA</h6>
+                    <p class="text-content">
+                      Whether you love a hot cup in the morning or enjoy a
+                      freshly brewed one on a chilly day, these words are here
+                      to make your daily coffee routine feel like poetry.
+                    </p>
+                    <h5>Rich Aroma Coffee</h5>
+                    <h6 class="product-price">$258.00</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img
+                      src="../assets/images/product/p1.1.webp"
+                      class="img-fluid main-img"
+                      alt="p1"
+                    >
+                    <img
+                      src="../assets/images/product/p1.webp"
+                      class="img-fluid hover-img"
+                      alt="p2"
+                    >
+                    <ul class="product-icons">
+                      <li><a href="#!"></a><i class="ri-links-line"></i></li>
+                      <li><a href="#!"></a><i class="ri-heart-3-line"></i></li>
+                      <li><a href="#!"></a><i class="ri-search-line"></i></li>
+                    </ul>
+                  </div>
+                  <div class="product-content">
+                    <h6 class="product-subtitle">KOINONIA</h6>
+                    <p class="text-content">
+                      Whether you love a hot cup in the morning or enjoy a
+                      freshly brewed one on a chilly day, these words are here
+                      to make your daily coffee routine feel like poetry.
+                    </p>
+                    <h5>Rich Aroma Coffee</h5>
+                    <h6 class="product-price">$258.00</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img
+                      src="../assets/images/product/p2.1.webp"
+                      class="img-fluid main-img"
+                      alt="p1"
+                    >
+                    <img
+                      src="../assets/images/product/p2.webp"
+                      class="img-fluid hover-img"
+                      alt="p2"
+                    >
+                    <ul class="product-icons">
+                      <li><a href="#!"></a><i class="ri-links-line"></i></li>
+                      <li><a href="#!"></a><i class="ri-heart-3-line"></i></li>
+                      <li><a href="#!"></a><i class="ri-search-line"></i></li>
+                    </ul>
+                  </div>
+                  <div class="product-content">
+                    <h6 class="product-subtitle">KOINONIA</h6>
+                    <p class="text-content">
+                      Whether you love a hot cup in the morning or enjoy a
+                      freshly brewed one on a chilly day, these words are here
+                      to make your daily coffee routine feel like poetry.
+                    </p>
+                    <h5>Rich Aroma Coffee</h5>
+                    <h6 class="product-price">$258.00</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap js-->
+    <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="../assets/js/jquery/jquery.min.js"></script>
+    <!-- Swiper-slider js-->
+    <script src="../assets/js/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/swiper/custom-swiper.js"></script>
+    <!-- Range-slider  -->
+    <script src="../assets/js/range-slider/ion.rangeSlider.min.js"></script>
+    <script>
+      $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 1000,
+        from: 0,
+        to: 200,
+      });
+    </script>
+    <!-- script.js  -->
+    <script src="../assets/js/pages/product-list/product-script.js"></script>
+  </body>
+</html>

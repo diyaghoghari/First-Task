@@ -1,0 +1,216 @@
+/**=====================
+    According CSS start
+==========================**/
+.accordion {
+    .filter-wrap {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+
+        li {
+            padding: 6px;
+            font-size: 14px;
+            background-color: $white;
+
+            &:hover {
+                background-color: rgba(var(--secondary-color), 1);
+                color: rgba(var(--primary-color));
+            }
+        }
+    }
+
+    .accordion-item {
+        border: none;
+        margin-bottom: 15px;
+        background-color: rgba(var(--theme-bg-brown),1);
+
+        .accordion-button {
+            border: none;
+            background-color: rgba(var(--theme-bg-brown),1);
+
+            &:not(.collapsed) {
+                border: none;
+                background-color: rgba(var(--theme-bg-brown),1);
+                color: $theme-font-color;
+                box-shadow: none;
+                .accordion-item{
+                    border: none;
+                }
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        .accordion-body {
+            padding-top: 0;
+
+            .input-group {
+                .input-group-text {
+                    background-color: $white;
+                    border: none;
+
+                    i {
+                        padding-left: 12px;
+                        border-left: 1px solid lightgray;
+                    }
+                }
+
+                input {
+                    padding-right: 0;
+                }
+            }
+
+            .categories-check {
+                height: 180px;
+                overflow: auto;
+            }
+
+            input {
+                border: none;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            .form-check {
+                // +.form-check {
+                padding-top: 10px;
+                // }
+
+                label {
+                    padding-left: 10px;
+                }
+
+                input {
+                    padding: 10px;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+
+                    &:checked {
+                        background-color: rgba(var(--primary-color));
+                    }
+                }
+            }
+
+            &.price {
+                .irs-bar {
+                    background-color: rgba(var(--primary-color),1);
+                }
+
+                .from,
+                .to {
+                    i {
+                        background-color: rgba(var(--primary-color),1);
+                    }
+
+                    &:hover {
+                        i {
+
+                            background-color: rgba(var(--primary-color),1);
+                        }
+                    }
+                }
+
+                .irs-from,
+                .irs-to {
+                    background-color: rgba(var(--primary-color),1);
+
+                    &::before {
+                        border-top-color: rgba(var(--primary-color),1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.payment-option-box{
+    .accordion-item {
+        margin-bottom: 25px;
+        background-color: $white;
+        box-shadow: 0 0 12px rgba(var(--primary-color),0.2);
+
+        .accordion-button {
+            background-color: $white;
+            padding: 0 10px 0 0;
+            &:not(.collapsed) {
+                background-color: $white;
+            }
+            &::after{
+                right: 15px;
+            }
+        }
+        .form-check{
+            width: 100%;
+           
+            label{
+                width: 100%;
+                font-weight: 500; 
+                padding: 10px 20px;
+            }
+        }
+        .accordion-body{
+            p{
+                color: $theme-light-color;
+                span{
+                    color: rgba(var(--primary-color),1);
+                    font-weight: 500;
+                }
+            }
+            input{
+                border:1px solid rgb(236, 236, 236);
+            }
+            .card-other-info{
+                display: flex;
+                gap: 10px;
+                justify-content: space-between;
+            }
+            .card-btn{
+                display: flex;
+                justify-content: end;
+                .btn{
+                    border-radius: 4px;
+                    padding-block: 8px;
+                }
+                .cancel{
+                    background-color: rgb(216, 213, 213);
+                }
+                .use-card{
+                    color: $white;
+                    background-color: rgba(var(--primary-color),1);
+                    margin-left: 16px;
+                }
+            }
+            h6{
+                font-size: 18px;
+            }
+            .net-banking{
+                display: flex;
+                flex-wrap: wrap;
+                .form-check{
+                    width: 50%;
+                    label{
+                        font-family: $open;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .form-select{
+                &:focus{
+                    box-shadow: none;
+                    border: 1px solid lightgrey;
+                }
+            }
+        }
+    }
+}
+
+/**=====================
+    According CSS end
+==========================**/

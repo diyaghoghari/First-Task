@@ -1,0 +1,108 @@
+/**=====================
+    Button CSS start
+==========================**/
+.theme-btn {
+    padding: 10px 16px;
+    background-color: rgba(var(--primary-color), 1);
+    color: $white;
+    font-size: 18px;
+    font-weight: 400;
+    border: 1px solid transparent;
+
+    &:hover {
+        background-color: $white;
+        color: rgba(var(--primary-color), 1);
+        border: 1px solid rgba(var(--primary-color), 1);
+    }
+}
+
+// #taptotop {
+//     background-color: rgba(var(--primary-color),1);
+//     color: $white;
+//     position: absolute;
+//     right: calc(20px + (40 - 20) * ((100vw - 320px) / (1980 - 320)));;
+//     bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (1980 - 320)));;
+//     position: fixed;
+//     box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.589);
+//     z-index: 9;
+//     display: none;
+//     @include pixelstrap-flex(flex,center,center);
+//     i{
+//         font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1980 - 320)));;
+//         font-weight: 600;
+//     }
+// }
+
+.scroll-setting{
+    position: fixed; 
+    bottom: calc(16px + (50 - 16) * ((100vw - 320px) / (1920 - 320)));;
+    right: calc(16px + (50 - 16) * ((100vw - 320px) / (1920 - 320)));
+    text-align: -webkit-right;
+    z-index: 2;
+    
+    .setting-menu{
+        display: none;
+        border-radius: 6px;
+        background-color: rgba(var(--secondary-color),1);
+        box-shadow:2px 2px 12px rgb(194, 193, 193);
+        margin-bottom: 10px;
+        padding: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
+        .rtl-box,.dark-box{
+            @include pixelstrap-flex(flex,end,center);
+            gap: 10px;
+            h6{
+                font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+                font-weight: 500;    
+            }
+            button{
+                width: calc(60px + (120 - 60) * ((100vw - 400px) / (1920 - 400)));
+                color:rgba(var(--primary-color),1);
+                border: 1px solid rgba(var(--primary-color),1);
+                font-size: 14px;
+                &.active{
+                    background-color: rgba(var(--primary-color),1);
+                    color: $white;  
+                }
+                @media screen and (max-width:400px) {
+                    width: calc(101px + (140 - 101) * ((100vw - 320px) / (400 - 320)));
+                }
+            }
+        }
+        &.show{
+            display: block;
+        }
+        .dark-box{
+        padding-top: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
+        }
+    }
+    #setting,#taptotop{
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.459);
+        background-color: rgba(var(--primary-color),1);
+        @include pixelstrap-size(calc(36px + (45 - 36) * ((100vw - 320px) / (1920 - 320))),calc(36px + (45 - 36) * ((100vw - 320px) / (1920 - 320))));
+        @include pixelstrap-flex(flex,center,center);
+        i{
+           
+            font-size: 20px;
+            color: $white;
+        }
+        &:hover{
+            background-color: rgba(var(--primary-color),1);
+            color: $white;
+        }
+    }
+    #taptotop{
+        display: none;
+        margin-top: 10px;
+        position: relative;
+        i{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+        }
+    }
+}
+
+/**=====================
+    Button CSS end
+==========================**/

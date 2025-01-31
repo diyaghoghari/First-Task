@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    >
+    <!-- Remix-Icon css-->
+    <link rel="stylesheet" href="../assets/css/vendors/remixicon.css" >
+    <!-- Swiper Slider css-->
+    <link
+      rel="stylesheet"
+      href="../assets/css/vendors/swiper-slider/swiper-slider.css"
+    >
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" href="../assets/css/vendors/bootstrap.css" >
+    <!-- Style css-->
+    <link rel="stylesheet" href="../assets/css/style.css" >
+    <link rel="icon" href="../assets/images/logo/favicon1.png" >
+    <title>Coffee Shop</title>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="preloader">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <!-- tap to top  -->
+    <div class="scroll-setting">
+      <div class="setting-menu">
+        <div class="rtl-box">
+          <h6>RTL</h6>
+          <button type="button" class="btn btnrtl">RTL</button>
+          <button type="button" class="btn btnltr active">LTR</button>
+        </div>
+        <div class="dark-box">
+          <h6>Mode</h6>
+          <button type="button" class="btn dark">Dark</button>
+          <button type="button" class="btn light active">Light</button>
+        </div>
+      </div>
+
+      <button type="button" class="btn" id="setting">
+        <i class="ri-settings-2-line"></i>
+      </button>
+
+      <button type="button" class="btn" id="taptotop">
+        <i class="ri-arrow-up-s-line"></i>
+      </button>
+    </div>
+
+    <!-- *** background-slider *** -->
+    <div class="swiper bg-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="content-wrap">
+            <img
+              src="../assets/images/new-bg-1.jpg"
+              class="img-fluid bg1"
+              alt="bg1"
+            >
+            <div class="overlay"></div>
+            <div class="bg-content">
+              <h1>A FINE MIXTURE OF TASTE & TRADITION</h1>
+              <h5>Not Just Coffee.Love it is!</h5>
+              <button class="btn theme-btn">Start Today</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="content-wrap">
+            <img
+              src="../assets/images/new-bg-2.jpg"
+              class="img-fluid bg2"
+              alt="bg2"
+            >
+            <div class="overlay"></div>
+            <div class="bg-content">
+              <h1>Dark AND REFINED FRESHNESS</h1>
+              <h5>The Royal Taste</h5>
+              <button class="btn theme-btn">Start Today</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="content-wrap">
+            <img
+              src="../assets/images/new-bg-3.jpeg"
+              class="img-fluid bg3"
+              alt="bg3"
+            >
+            <div class="overlay"></div>
+            <div class="bg-content">
+              <h1>WE DELIVER GOOD MOOD</h1>
+              <h5>Fresh Latte.Different Flavours.</h5>
+              <button class="btn theme-btn">Start Today</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- *** header *** -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-burger-icon">
+              <i class="ri-menu-line"></i>
+            </span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="../assets/images/logo/logo-light.png"
+              class="img-fluid"
+              alt="logo"
+            >
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index.html"
+                  target="_blank"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >PRODUCT <i class="ri-arrow-down-s-line"></i
+                ></a>
+                <ul class="sub-items">
+                  <li>
+                    <a href="productlist.html" target="_blank">PRODUCT-LIST</a>
+                  </li>
+                  <li><a href="productdetail.html">PRODUCT-DETAIL</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true"
+                  >PAGES <i class="ri-arrow-down-s-line"></i
+                ></a>
+                <ul class="sub-items">
+                  <li><a href="#!">CONTACT US</a></li>
+                  <li><a href="#!">ABOUT US</a></li>
+                  <li><a href="#!">ABOUT ME</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true"
+                  >MEGA MENU <i class="ri-arrow-down-s-line"></i
+                ></a>
+                <ul class="sub-items mega-menu">
+                  <li>
+                    <div class="row g-0 g-xl-4">
+                      <div class="col-12 col-lg-3">
+                        <div class="link-section">
+                          <div class="menu-title">
+                            <h5>
+                              Arabica <i class="ri-arrow-down-s-line"></i>
+                            </h5>
+                          </div>
+                          <div class="menu-content">
+                            <ul>
+                              <li><a href="#!">Decaffeinated Coffee</a></li>
+                              <li><a href="#!">Dried Pure Coffee</a></li>
+                              <li><a href="#!">Special Coffee</a></li>
+                              <li><a href="#!">Black Coffee</a></li>
+                              <li><a href="#!">60 Degree Coffee</a></li>
+                              <li><a href="#!">Blended Coffee</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3">
+                        <div class="link-section">
+                          <div class="menu-title">
+                            <h5>
+                              Robusta <i class="ri-arrow-down-s-line"></i>
+                            </h5>
+                          </div>
+                          <div class="menu-content">
+                            <ul>
+                              <li><a href="#!">Gold Filter Coffee</a></li>
+                              <li><a href="#!">Lemon Flavor Coffee</a></li>
+                              <li><a href="#!">Xtra Roasted Coffee</a></li>
+                              <li><a href="#!">Fresh Green Coffee</a></li>
+                              <li><a href="#!">Jamu Coffee</a></li>
+                              <li><a href="#!">Insta Coffee</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3">
+                        <div class="link-section">
+                          <div class="menu-title">
+                            <h5>
+                              Liberica <i class="ri-arrow-down-s-line"></i>
+                            </h5>
+                          </div>
+                          <div class="menu-content">
+                            <ul>
+                              <li><a href="#!">Rich Aroma Coffee</a></li>
+                              <li><a href="#!">Grounded Coffee</a></li>
+                              <li><a href="#!">Aroma Coffee</a></li>
+                              <li><a href="#!">Rambo Coffee</a></li>
+                              <li><a href="#!">Bean Filter Coffee</a></li>
+                              <li><a href="#!">Refresher Coffee</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3">
+                        <img
+                          src="../assets/images/mega-menu/1.jpeg"
+                          class="img-fluid"
+                          alt="menu1"
+                        >
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="header-icons">
+              <li>
+                <button
+                  class="btn"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                >
+                  <i class="ri-shopping-cart-2-line"></i>
+                </button>
+              </li>
+              <li>
+                <a href="#!"><i class="ri-search-line"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link"><i class="ri-user-3-line"></i></a>
+                <ul class="sub-items nav-icon">
+                  <li><a href="logIn.html" target="_blank">LogIn</a></li>
+                  <li><a href="register.html" target="_blank">Register</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- *** cart-offcanvas *** -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">MY CART( 3 )</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <span>3 items</span>
+        <div class="progress" role="progressbar">
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated"
+            style="width: 58.08%"
+          >
+            <div class="cart-icon">
+              <i class="ri-truck-line"></i>
+            </div>
+          </div>
+        </div>
+        <p class="clear">Clear Cart</p>
+        <ul class="cart-product">
+          <li>
+            <div class="img-detail">
+              <img
+                src="../assets/images/product/p1.1.webp"
+                class="img-fluid"
+                alt="cart1"
+                
+              >
+              <div class="info">
+                <h6>Couture Edge</h6>
+                <p>1 X $6.74</p>
+              </div>
+            </div>
+            <div class="edit-delete-wrap">
+              <div class="edit-delete">
+                <div class="icon-box"><i class="ri-pencil-line"></i></div>
+                <div class="icon-box"><i class="ri-delete-bin-6-line"></i></div>
+              </div>
+
+              <div class="input-group">
+                <span class="input-group-text">-</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  value="1"
+                  aria-label="Amount (to the nearest dollar)"
+                >
+                <span class="input-group-text">+</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-detail">
+              <img
+                src="../assets/images/product/p1.1.webp"
+                class="img-fluid"
+                alt="cart1"
+                
+              >
+              <div class="info">
+                <h6>Couture Edge</h6>
+                <p>1 X $6.74</p>
+              </div>
+            </div>
+            <div class="edit-delete-wrap">
+              <div class="edit-delete">
+                <div class="icon-box"><i class="ri-pencil-line"></i></div>
+                <div class="icon-box"><i class="ri-delete-bin-6-line"></i></div>
+              </div>
+
+              <div class="input-group">
+                <span class="input-group-text">-</span>
+                <input
+                  type="text"
+                  value="1"
+                  class="form-control"
+                  aria-label="Amount (to the nearest dollar)"
+                >
+                <span class="input-group-text">+</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-detail">
+              <img
+                src="../assets/images/product/p1.1.webp"
+                class="img-fluid"
+                alt="cart1"
+                
+              >
+              <div class="info">
+                <h6>Couture Edge</h6>
+                <p>1 X $6.74</p>
+              </div>
+            </div>
+            <div class="edit-delete-wrap">
+              <div class="edit-delete">
+                <div class="icon-box"><i class="ri-pencil-line"></i></div>
+                <div class="icon-box"><i class="ri-delete-bin-6-line"></i></div>
+              </div>
+
+              <div class="input-group">
+                <span class="input-group-text">-</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  value="1"
+                  aria-label="Amount (to the nearest dollar)"
+                >
+                <span class="input-group-text">+</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="final-cart">
+          <li class="cart-amount">
+            <h6>Sub Total:</h6>
+            <h6 class="price">$36.74</h6>
+          </li>
+          <li class="checkout">
+            <a href="#!">View Cart</a>
+            <a href="checkout.html">Check Out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- *** product-section *** -->
+    <section class="product-section-1 section-block-space">
+      <div class="container">
+        <div class="swiper product-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide product-box">
+              <div class="product-img">
+                <a href="productdetail.html" target="_blank">
+                  <img
+                    src="../assets/images/product/p1.1.webp"
+                    class="img-fluid main-img"
+                    alt="p1"
+                  >
+                  <img
+                    src="../assets/images/product/p1.webp"
+                    class="img-fluid hover-img"
+                    alt="p2"
+                  >
+                </a>
+                <ul class="product-icons">
+                  <li><a href="#!"></a><i class="ri-links-line"></i></li>
+                  <li><a href="#!"></a><i class="ri-heart-3-line"></i></li>
+                  <li><a href="#!"></a><i class="ri-search-line"></i></li>
+                </ul>
+              </div>
+              <div class="product-content">
+                <h6 class="product-subtitle">KOINONIA</h6>
+                <h5>Rich Aroma Coffee</h5>
+                <h6 class="product-price">$258.00</h6>
+              </div>
+            </div>
+            <div class="swiper-slide product-box">
+              <div class="product-img">
+                <a href="productdetail.html" target="_blank">
+                  <img
+                    src="../assets/images/product/p2.1.webp"
+                    class="img-fluid main-img"
+                    alt="p1"
+                  >
+                  <img
+                    src="../assets/images/product/p2.webp"
+                    class="img-fluid hover-img"
+                    alt="p2"
+                  >
+                </a>
+                <ul class="product-icons">
+                  <li><a href="#!"></a><i class="ri-links-line"></i></li>
+                  <li><a href="#!"></a><i class="ri-heart-3-line"></i></li>
+                  <li><a href="#!"></a><i class="ri-search-line"></i></li>
+                </ul>
+              </div>
+              <div class="product-content">
+                <h6 class="product-subtitle">LAVAZZA</h6>
+                <h5>Roast & Ground Coffee</h5>
+                <h6 class="product-price">$278.00</h6>
+              </div>
+            </div>
+            <div class="swiper-slide product-box">
+              <div class="product-img">
+               <a href="productdetail.html" target="_blank">
+                <img
+                src="../assets/images/product/p1.1.webp"
+                class="img-fluid main-img"
+                alt="p1"
+              >
+              <img
+                src="../assets/images/product/p1.webp"
+                class="img-fluid hover-img"
+                alt="p2"
+              >
+               </a>
+                <ul class="product-icons">
+                  <li><a href="#!"></a><i class="ri-links-line"></i></li>
+                  <li><a href="#!"></a><i class="ri-heart-3-line"></i></li>
+                  <li><a href="#!"></a><i class="ri-search-line"></i></li>
+                </ul>
+              </div>
+              <div class="product-content">
+                <h6 class="product-subtitle">KOINONIA</h6>
+                <h5>Rich Aroma Coffee</h5>
+                <h6 class="product-price">$258.00</h6>
+              </div>
+            </div>
+            <div class="swiper-slide product-box">
+              <div class="product-img">
+                <img
+                  src="../assets/images/product/p3.1.webp"
+                  class="img-fluid main-img"
+                  alt="p1"
+                >
+                <img
+                  src="../assets/images/product/p3.webp"
+                  class="img-fluid hover-img"
+                  alt="p2"
+                >
+                <ul class="product-icons">
+                  <li><a href="#!"></a><i class="ri-links-line"></i></li>
+                  <li><a href="#!"></a><i class="ri-heart-3-line"></i></li>
+                  <li><a href="#!"></a><i class="ri-search-line"></i></li>
+                </ul>
+              </div>
+              <div class="product-content">
+                <h6 class="product-subtitle">HEALTHFIT</h6>
+                <h5>Lemon Flavor Coffee</h5>
+                <h6 class="product-price">$218.00</h6>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- *** coffee-information section *** -->
+    <section class="blog-section section-block-space">
+      <div class="container">
+        <div class="row blog-box">
+          <div class="col-12 blog-top">
+            <h2>THE COFFEE HERALD</h2>
+            <h6>
+              Whether you love a hot cup in the morning or enjoy a freshly
+              brewed one on a chilly day, these words are here to make your
+              daily coffee routine feel like poetry.
+            </h6>
+          </div>
+          <div class="col-12 blog-bottom">
+            <div class="swiper blog-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="blog">
+                    <img
+                      src="../assets/images/blog/g-1.jpg"
+                      class="img-fluid"
+                      alt="galler1"
+                    >
+                    <div class="blog-content">
+                      <h4>PREP TECHNIQUES</h4>
+                      <p>
+                        There that news is communicated and where those
+                        interested in politics criticize the government in all
+                        freedom and without being fearful, since the government
+                        does not heed what the people say.
+                      </p>
+                      <a href="#!"><h6>READ MORE</h6></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="blog">
+                    <img
+                      src="../assets/images/blog/g-2.jpg"
+                      class="img-fluid"
+                      alt="galler2"
+                    >
+                    <div class="blog-content">
+                      <h4>PREP TECHNIQUES</h4>
+                      <p>
+                        People engage in conversation, for it is and where those
+                        interested in fearful, since the government does not
+                        heed what the people say.
+                      </p>
+                      <a href="#!"><h6>READ MORE</h6></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="blog">
+                    <img
+                      src="../assets/images/blog/g-3.jpg"
+                      class="img-fluid"
+                      alt="galler3"
+                    >
+                    <div class="blog-content">
+                      <h4>PREP TECHNIQUES</h4>
+                      <p>
+                        People engage in conversation, for it is there that news
+                        is communicated.
+                      </p>
+                      <h6>READ MORE</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="blog">
+                    <img
+                      src="../assets/images/blog/g-2.jpg"
+                      class="img-fluid"
+                      alt="galler2"
+                    >
+                    <div class="blog-content">
+                      <h4>PREP TECHNIQUES</h4>
+                      <p>
+                        People engage in conversation, for it is and where those
+                        interested in fearful, since the government does not
+                        heed what the people say.
+                      </p>
+                      <a href="#!"><h6>READ MORE</h6></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- *** parallax section *** -->
+    <div class="parallax">
+      <div class="parallax-box">
+        <img
+          src="../assets/images/logo/logo2.png"
+          class="img-fluid"
+          alt="logo2"
+        >
+      </div>
+    </div>
+
+    <!-- *** counting section *** -->
+    <section class="counting-section section-block-space">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-xl-3">
+            <div class="count-box">
+              <h2 class="counter" data-target="3200">
+                0 <i class="ri-add-line"></i>
+              </h2>
+              <h4>Varieties of Coffee</h4>
+              <h6>
+                Species variations. Of the two main species grown, arabica
+                coffee
+              </h6>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3">
+            <div class="count-box">
+              <h2 class="counter" data-target="2500">
+                0 <i class="ri-add-line"></i>
+              </h2>
+              <h4>Hours of Testing</h4>
+              <h6>
+                Species variations. Of the two main species grown, arabica
+                coffee
+              </h6>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3">
+            <div class="count-box">
+              <h2 class="counter" data-target="9000">
+                0 <i class="ri-add-line"></i>
+              </h2>
+              <h4>Coffee Markets</h4>
+              <h6>
+                Species variations. Of the two main species grown, arabica
+                coffee
+              </h6>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3">
+            <div class="count-box">
+              <h2 class="counter" data-target="5000">
+                0 <i class="ri-add-line"></i>
+              </h2>
+              <h4>Coffee Brands</h4>
+              <h6>
+                Species variations. Of the two main species grown, arabica
+                coffee
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***categories-collection ***  -->
+    <section class="categories section-block-space">
+      <div class="container">
+        <div class="categories-title">
+          <h2>Let's Try The Best coffee in Amsterdam</h2>
+          <a href="#!">Menu More<i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="categories-content">
+          <div class="swiper categories-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide category-box">
+                <div class="category-img">
+                  <img
+                    src="../assets/images/categories/Cappuccino.jpeg"
+                    class="img-fluid"
+                    alt="c1"
+                  >
+                </div>
+                <a href="#!">Cappuccino</a>
+              </div>
+              <div class="swiper-slide category-box">
+                <div class="category-img">
+                  <img
+                    src="../assets/images/categories/brew.webp"
+                    class="img-fluid"
+                    alt="c2"
+                  >
+                </div>
+                <a href="#!">Clod Brew</a>
+              </div>
+              <div class="swiper-slide category-box">
+                <div class="category-img">
+                  <img
+                    src="../assets/images/categories/expresso.png"
+                    class="img-fluid"
+                    alt="c3"
+                  >
+                </div>
+                <a href="#!">Expresso</a>
+              </div>
+              <div class="swiper-slide category-box">
+                <div class="category-img">
+                  <img
+                    src="../assets/images/categories/latte.jpg"
+                    class="img-fluid"
+                    alt="c4"
+                  >
+                </div>
+                <a href="#!">Latte</a>
+              </div>
+              <div class="swiper-slide category-box">
+                <div class="category-img">
+                  <img
+                    src="../assets/images/categories/mocha.jpeg"
+                    class="img-fluid"
+                    alt="c5"
+                  >
+                </div>
+                <a href="#!">Mocha</a>
+              </div>
+              <div class="swiper-slide category-box">
+                <div class="category-img">
+                  <img
+                    src="../assets/images/categories/brew.webp"
+                    class="img-fluid"
+                    alt="c2"
+                  >
+                </div>
+                <a href="#!">Clod Brew</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- *** review-section *** -->
+    <section class="review-section section-block-space">
+      <div class="container">
+        <div class="review-title">
+          <h2>Feedback From Our Community</h2>
+        </div>
+        <div class="review-content">
+          <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide review-box">
+                <div class="review-top">
+                  <p>
+                    " when i want a professional weebly website with more
+                    options for customization , I always use themes from
+                    themeforest . their support is unvalied."
+                  </p>
+                </div>
+                <div class="review-bottom">
+                  <div class="review-img">
+                    <img src="../assets/images/team/t2.jpg" alt="review1">
+                  </div>
+                  <h5>evan Olisen</h5>
+                  <h6>CEO</h6>
+                  <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide review-box">
+                <div class="review-top">
+                  <p>
+                    " when i want a professional weebly website with more
+                    options for customization , I always use themes from
+                    themeforest . their support is unvalied."
+                  </p>
+                </div>
+                <div class="review-bottom">
+                  <div class="review-img">
+                    <img src="../assets/images/team/t2.jpg" alt="review1">
+                  </div>
+                  <h5>evan Olisen</h5>
+                  <h6>CEO</h6>
+                  <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide review-box">
+                <div class="review-top">
+                  <p>
+                    " when i want a professional weebly website with more
+                    options for customization , I always use themes from
+                    themeforest . their support is unvalied."
+                  </p>
+                </div>
+                <div class="review-bottom">
+                  <div class="review-img">
+                    <img src="../assets/images/team/t2.jpg" alt="review1">
+                  </div>
+                  <h5>evan Olisen</h5>
+                  <h6>CEO</h6>
+                  <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide review-box">
+                <div class="review-top">
+                  <p>
+                    " when i want a professional weebly website with more
+                    options for customization , I always use themes from
+                    themeforest . their support is unvalied."
+                  </p>
+                </div>
+                <div class="review-bottom">
+                  <div class="review-img">
+                    <img src="../assets/images/team/t2.jpg" alt="review1">
+                  </div>
+                  <h5>evan Olisen</h5>
+                  <h6>CEO</h6>
+                  <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide review-box">
+                <div class="review-top">
+                  <p>
+                    " when i want a professional weebly website with more
+                    options for customization , I always use themes from
+                    themeforest . their support is unvalied."
+                  </p>
+                </div>
+                <div class="review-bottom">
+                  <div class="review-img">
+                    <img src="../assets/images/team/t2.jpg" alt="review1">
+                  </div>
+                  <h5>evan Olisen</h5>
+                  <h6>CEO</h6>
+                  <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- *** Team section *** -->
+
+    <section class="team-section section-block-space">
+      <div class="container">
+        <div class="team-title">
+          <h2>MEET OUR TEAM</h2>
+        </div>
+        <div class="row g-3 g-sm-3 g-lg-4">
+          <div class="col-12 col-sm-6 col-lg-3 col-575">
+            <div class="team-wrap">
+              <div class="team-img">
+                <img
+                  src="../assets/images/team/t2.jpg"
+                  class="img-fluid"
+                  alt="t1"
+                >
+              </div>
+              <div class="team-detail">
+                <h5>Emily Carter</h5>
+                <div class="social">
+                  <i class="ri-facebook-fill facebook"></i>
+                  <i class="ri-instagram-line insta"></i>
+                  <i class="ri-twitter-x-line twitt"></i>
+                  <i class="ri-linkedin-fill linked"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 col-575">
+            <div class="team-wrap">
+              <div class="team-img">
+                <img
+                  src="../assets/images/team/z-1.jpeg"
+                  class="img-fluid"
+                  alt="t1"
+                >
+              </div>
+              <div class="team-detail">
+                <h5>Noah Bennett</h5>
+                <div class="social">
+                  <i class="ri-facebook-fill facebook"></i>
+                  <i class="ri-instagram-line insta"></i>
+                  <i class="ri-twitter-x-line twitt"></i>
+                  <i class="ri-linkedin-fill linked"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 col-575">
+            <div class="team-wrap">
+              <div class="team-img">
+                <img
+                  src="../assets/images/team/w-1.jpeg"
+                  class="img-fluid"
+                  alt="t1"
+                >
+              </div>
+              <div class="team-detail">
+                <h5>Liam Anderson</h5>
+                <div class="social">
+                  <i class="ri-facebook-fill facebook"></i>
+                  <i class="ri-instagram-line insta"></i>
+                  <i class="ri-twitter-x-line twitt"></i>
+                  <i class="ri-linkedin-fill linked"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 col-575">
+            <div class="team-wrap">
+              <div class="team-img">
+                <img
+                  src="../assets/images/team/w-4.jpeg"
+                  class="img-fluid"
+                  alt="t1"
+                >
+              </div>
+              <div class="team-detail">
+                <h5>Sophia Reynolds</h5>
+                <div class="social">
+                  <i class="ri-facebook-fill facebook"></i>
+                  <i class="ri-instagram-line insta"></i>
+                  <i class="ri-twitter-x-line twitt"></i>
+                  <i class="ri-linkedin-fill linked"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- *** Footer *** -->
+    <footer>
+      <div class="container" id="footer">
+        <div class="row row-cols-lg-5 footer-1 g-3 g-sm-4">
+          <div class="col-12 col-sm-6">
+            <div>
+              <img
+                src="../assets/images/logo/logo-light.png"
+                class="img-fluid"
+                alt="logo"
+              >
+              <p class="info">
+                it is a long established fact that a reader will be distracted
+                by the readable content.
+              </p>
+              <ul class="social-media">
+                <li>
+                  <a href="#!"><i class="ri-facebook-fill"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="ri-google-fill"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="ri-twitter-x-line"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="ri-instagram-line"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="ri-linkedin-fill"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <h5 class="footer-title">Get Help</h5>
+            <ul class="footer-contain">
+              <li>
+                <a href="#!" class="text-content"
+                  ><h6>Delivery information</h6></a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-content"
+                  ><h6>Sale Terms & conditions</h6></a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-content"><h6>Returns & Refunds</h6></a>
+              </li>
+              <li>
+                <a href="#!" class="text-content"><h6>Privacy Notice</h6></a>
+              </li>
+              <li>
+                <a href="#!" class="text-content"><h6>Shopping FAQs</h6></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6">
+            <h5 class="footer-title">My Account</h5>
+            <ul class="footer-contain">
+              <li>
+                <a href="#!" class="text-content"><h6>About us</h6></a>
+              </li>
+              <li>
+                <a href="#!" class="text-content"><h6>Contact us</h6></a>
+              </li>
+              <li>
+                <a href="#!" class="text-content"
+                  ><h6>Terms & Conditions</h6></a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-content"
+                  ><h6>Returns & Exchages</h6></a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-content"
+                  ><h6>Shipping & Delivery</h6></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6">
+            <h5 class="footer-title">Information</h5>
+            <ul class="footer-contain">
+              <li>
+                <a href="#!" class="text-content"><h6>New Products</h6></a>
+              </li>
+              <li>
+                <a href="#!" class="text-content"><h6>Top Sellers</h6></a>
+              </li>
+              <li>
+                <a href="#!" class="text-content"><h6>Our Blog</h6></a>
+              </li>
+              <li>
+                <a href="#!" class="text-content"><h6>About Our Shop</h6></a>
+              </li>
+              <li>
+                <a href="#!" class="text-content"><h6>Secure Shopping</h6></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6">
+            <h5 class="footer-title">Store information</h5>
+            <ul class="store-information footer-contact">
+              <li>
+                <i class="ri-map-pin-line"></i>
+                <p>Coffee Demo Store, Demo store india 345 - 659</p>
+              </li>
+              <li>
+                <i class="ri-phone-line"></i>
+                <p>Call us: 123-456-7890</p>
+              </li>
+              <li>
+                <i class="ri-mail-line"></i>
+                <p>Email Us: Support@coffee.com</p>
+              </li>
+              <li>
+                <i class="ri-article-line"></i>
+                <p>Fax: 123456</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright-section">
+          <div class="copyright">
+            <p>2025 Copyright By Themeforest Powered By Pixelstrap</p>
+          </div>
+          <div class="visa">
+            <img
+              src="../assets/images/footer-visa/1.png"
+              class="img-fluid"
+              alt="visa1"
+            >
+            <img
+              src="../assets/images/footer-visa/2_2.png"
+              class="img-fluid"
+              alt="visa1"
+            >
+            <img
+              src="../assets/images/footer-visa/3_3.png"
+              class="img-fluid"
+              alt="visa1"
+            >
+            <img
+              src="../assets/images/footer-visa/4_4.png"
+              class="img-fluid"
+              alt="visa1"
+            >
+            <img
+              src="../assets/images/footer-visa/5_5.png"
+              class="img-fluid"
+              alt="visa1"
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap js-->
+    <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Swiper-slider js-->
+    <script src="../assets/js/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/swiper/custom-swiper.js"></script>
+    <!-- script.js  -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

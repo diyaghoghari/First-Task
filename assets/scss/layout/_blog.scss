@@ -1,0 +1,123 @@
+/**=====================
+    blog CSS start
+==========================**/
+.blog-section{
+    background-image: url(../images/bg-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .blog-box{
+        .blog-top{
+            text-align: center;
+            h2{
+                font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
+                font-family: $mar;
+                font-weight: 600;
+            }
+            h6{
+                font-family: $open;
+                font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+                padding-top: 10px;
+                width: 60%;
+                margin: 0 auto;
+                @media screen and (max-width:992px) {
+                    width: 90%;
+                }
+                @media screen and (max-width:575px) {
+                    @include pixelstrap-ellipsis(2);
+                }
+            }
+        }
+        .blog-bottom{
+            padding-top: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320)));
+            .blog{
+
+                &-content{
+                    padding-top: 14px; 
+                    font-family: $open;
+                    h4{
+                        font-family: $mar;
+                        font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
+                        padding-bottom: 4px;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                    }
+                    p {
+                        @include pixelstrap-ellipsis(2);
+                        color: $theme-light-color;
+                        font-size: calc(12px + (15 - 12) * ((100vw - 320px) / (1920 - 320)));
+                        line-height: 1.4;
+                        padding-right: 20px;
+                        [dir="rtl"] & {
+                            padding-left: 20px !important;
+                            padding-right: unset !important;
+                        }
+                    }
+                    h6{
+                        position: relative;
+                        margin-top: 10px;
+                        padding-left: 20px;
+                        font-size: calc(12px + (15 - 12) * ((100vw - 320px) / (1920 - 320)));
+                        font-weight: 600;
+                        color: $theme-font-color;
+                        transition: all .6s;
+                        [dir="rtl"] & {
+                            padding-right: 20px !important;
+                            padding-left: unset !important;
+                        }
+                        &::after{
+                            position: absolute;
+                            content: "";
+                            @include pixelstrap-size(12px,1px);
+                            background-color: $theme-font-color ;
+                            top: 50%;
+                            left: 0;
+                            transform: translateY(-50%);
+                            transition: all .6s;
+                            [dir="rtl"] & {
+                                right: 0 !important;
+                                left: unset !important;
+                            }
+                        }
+                        &:hover{
+                            &::after{
+                                width: 15px;
+                            }
+                            padding-left: 25px;
+                        }
+                    }
+                }
+                &:hover{
+                    img{
+                        transform: translate(1.1);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// *** parallax ***
+.parallax{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432),rgba(0, 0, 0, 0.514)),url(../images/bg-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 60vh;
+    @media screen and (max-width:575px){
+        height: 50vh;
+    }
+}
+.parallax-box{
+    @include pixelstrap-flex(flex,center,center);
+    height: 100%;
+    img{
+        height: calc(150px + (224 - 150) * ((100vw - 320px) / (1920 - 320)));
+    }
+    
+}
+/**=====================
+    blog CSS end
+==========================**/

@@ -1,0 +1,88 @@
+/**=====================
+    Team CSS Start
+==========================**/
+.team-section {
+    background-color: rgba(var(--secondary-color),1);
+
+    @media screen and (max-width:575px) and (min-width:430px){
+        .col-575{
+            width: 50%;
+        }
+    }
+
+    .team-title {
+        h2 {
+            text-align: center;
+            font-family: $mar;
+            font-weight: 600;
+            padding-bottom: 30px;
+            font-size: calc(20px + (36 - 20) * ((100vw - 320px) / (1920 - 320)));
+        }
+    }
+
+    .team-wrap {
+        border-radius: 6px;
+        overflow: hidden;
+        .team-img {
+            overflow: hidden;
+            
+            img {
+                transition: all .6s ;
+                width: 100%;
+                transform: scale(1);
+            }
+        }
+
+        .team-detail {
+            padding-block: 10px;
+            background-color: rgba(var(--primary-color),1);
+            color: $white;
+            h5 {
+                font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
+                text-align: center;
+                font-family: $mar;
+            }
+
+            .social {
+                text-align: center;
+                transition: all .45s;
+                padding-top: 8px;
+
+                i {
+                    padding-inline: 5px;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+                .facebook{
+                    &:hover{
+                        color: rgb(0, 102, 255);
+                    }
+                }
+                .insta{
+                    &:hover{
+                        color: rgb(240, 107, 233);
+                    }
+                }
+                .twitt{
+                    &:hover{
+                        color: rgb(105, 207, 233);
+                    }
+                }
+                .linked{
+                    &:hover{
+                        color: rgb(25, 88, 184);
+                    }
+                }
+            }
+        }
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+/**=====================
+    Team CSS end
+==========================**/

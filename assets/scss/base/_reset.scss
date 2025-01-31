@@ -1,0 +1,83 @@
+/**=====================
+    Reset CSS start
+==========================**/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: $theme-font-color;
+}
+::selection {
+    background-color: rgba(var(--primary-color),1);
+    color: $white;
+}
+
+a {
+    text-decoration: none;
+    color:#000000;
+}
+
+ul,
+ol,
+dl {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    li {
+        padding: 0;
+        margin: 0;
+    }
+}
+.accordion{
+    .accordion-body{
+        .categories-check{
+            &::-webkit-scrollbar {
+                width: 4px;
+            }
+            
+            &::-webkit-scrollbar-track {
+                background-color: rgb(216, 214, 214);
+            }
+            
+            &::-webkit-scrollbar-thumb {
+                background-color: rgba(var(--primary-color),1);
+                border-radius: 73px;
+            }
+        }
+    }
+}
+.product-detail-section{
+    .product-section-box{
+        .tab-review-wrapper{
+            &::-webkit-scrollbar {
+                width: 4px;
+            }
+            
+            &::-webkit-scrollbar-track {
+                background-color: rgb(216, 214, 214);
+            }
+            
+            &::-webkit-scrollbar-thumb {
+                background-color: rgba(var(--primary-color),1);
+                border-radius: 73px;
+            }
+        }
+    }
+}
+.section-t-space {
+    padding-top: calc(30px + (60 - 30) * ((100vw - 320px) / (1980 - 320)));
+}
+
+.section-b-space {
+    padding-bottom: calc(30px + (60 - 30) * ((100vw - 320px) / (1980 - 320)));
+}
+
+.section-block-space {
+    padding-block: calc(30px + (60 - 30) * ((100vw - 320px) / (1980 - 320)));
+}
+/**=====================
+    Reset CSS end
+==========================**/

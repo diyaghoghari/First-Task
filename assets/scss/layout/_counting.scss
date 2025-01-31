@@ -1,0 +1,30 @@
+/**=====================
+    Counting CSS start
+==========================**/
+.counting-section{
+    .count-box{
+        text-align: center;
+        font-family: $mar;
+        padding-inline: 20px;
+        h2{
+            font-size: calc(24px + (55 - 24) * ((100vw - 320px) / (1920 - 320)));
+            font-family: $mar;
+            color: rgba(var(--primary-color),1);
+        }
+        h4{
+            padding-top: calc(2px + (24 - 2) * ((100vw - 320px) / (1920 - 320)));
+            font-size: 20px;
+            color: $theme-font-color;
+        }
+        h6{
+            font-family: $open;
+            font-size: 15px;
+            font-weight: 400;
+            padding-top: 6px;
+            color: $theme-light-color
+        }
+    }
+}
+/**=====================
+    Counting CSS end
+==========================**/
